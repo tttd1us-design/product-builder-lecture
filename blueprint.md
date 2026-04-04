@@ -1,21 +1,42 @@
-
-# Lotto Number Generator
+# Blueprint: Lotto Number Generator
 
 ## Overview
 
-This application is a simple, visually appealing tool for generating random lottery numbers. It provides users with a set of unique numbers for lottery draws, presented in a clean and modern interface.
+This is a simple, visually appealing web application that generates random lottery numbers for the user. It features a clean, modern design with interactive elements and animations.
 
-## Features & Design
+## Project Outline
 
-- **Responsive Layout:** The application is fully responsive and works on both mobile and desktop devices.
-- **Modern Aesthetics:** It features a unique user experience with a balanced layout, clean spacing, and polished styles.
-- **Interactive Elements:** A "Generate Numbers" button provides a clear call-to-action, and the generated numbers are displayed dynamically.
-- **Color Palette:** A vibrant color palette is used to create an energetic look and feel.
-- **Typography:** Expressive typography is used to create a clear visual hierarchy.
-- **Visual Effects:** Subtle drop shadows and glow effects are used to create a sense of depth and interactivity.
+### Version 1.0 (Initial)
 
-## Current Plan
+*   **HTML (`index.html`):** Basic structure with a container, a title, a placeholder for the numbers, and a "Generate" button.
+*   **CSS (`style.css`):** Modern design with a custom font (Poppins), a clean color palette, and responsive layout.
+*   **JavaScript (`main.js`):** Logic to generate and display 6 unique random numbers between 1 and 45.
 
-- **HTML:** Create the basic structure of the application with a title, a container for the numbers, and a button.
-- **CSS:** Style the application with a modern and responsive design, including a vibrant color palette, custom fonts, and visual effects.
-- **JavaScript:** Implement the logic for generating and displaying the random lottery numbers.
+### Version 1.1 (Visual Flair)
+
+*   **HTML (`index.html`):** Added a lucky clover icon (🍀).
+*   **CSS (`style.css`):** Added animations for the icon and numbers.
+
+### Version 1.2 (Color Theme Update)
+
+*   **CSS (`style.css`):** Changed the primary color to "lucky green".
+
+### Version 1.3 (Google Sign-In)
+
+*   **Goal:** Integrated Firebase Authentication for Google Sign-In.
+*   **Status:** This feature is being temporarily removed to focus on the core lottery generation functionality as per the new request.
+
+## Current Plan: Simplify and Localize to Korean
+
+*   **Goal:** Create a simple Lotto Number Generator, removing the Google Sign-In feature and localizing the content to Korean.
+
+*   **Steps:**
+    1.  **Modify `index.html`:**
+        *   Remove all authentication-related elements (buttons, containers, Firebase scripts).
+        *   Translate the title and button text to Korean.
+    2.  **Modify `style.css`:**
+        *   Remove all CSS styles related to the authentication elements.
+    3.  **Modify `main.js`:**
+        *   Remove all Firebase and authentication-related JavaScript code.
+    4.  **Delete `.idx/mcp.json`:**
+        *   Remove the Firebase server configuration file as it is no longer needed.

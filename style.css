@@ -3,10 +3,10 @@
 :root {
   --background-color: #f0f2f5;
   --container-bg: #ffffff;
-  --primary-color: #4f86f7;
+  --primary-color: #1DB954;
   --text-color: #333;
   --shadow-color: rgba(0, 0, 0, 0.1);
-  --glow-color: rgba(79, 134, 247, 0.4);
+  --glow-color: rgba(29, 185, 84, 0.4);
 }
 
 * {
@@ -39,6 +39,15 @@ h1 {
   margin-bottom: 2rem;
   font-weight: 600;
   font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+  animation: spin 2s linear infinite;
 }
 
 .numbers {
@@ -61,12 +70,16 @@ h1 {
   font-size: 1.5rem;
   font-weight: 600;
   box-shadow: 0 4px 8px var(--shadow-color);
-  transition: transform 0.3s ease;
+  transform: scale(0);
+  animation: pop-in 0.5s forwards;
 }
 
-.number:hover {
-  transform: scale(1.1);
-}
+.number:nth-child(1) { animation-delay: 0.1s; }
+.number:nth-child(2) { animation-delay: 0.2s; }
+.number:nth-child(3) { animation-delay: 0.3s; }
+.number:nth-child(4) { animation-delay: 0.4s; }
+.number:nth-child(5) { animation-delay: 0.5s; }
+.number:nth-child(6) { animation-delay: 0.6s; }
 
 #generate {
   background-color: var(--primary-color);
@@ -84,4 +97,15 @@ h1 {
 #generate:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px var(--glow-color);
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pop-in {
+  to {
+    transform: scale(1);
+  }
 }
