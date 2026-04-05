@@ -131,53 +131,32 @@ const places = [
   }
 ];
 
-const placeList = document.getElementById("place-list");
 const modal = document.getElementById("modal");
 const modalTitle = document.getElementById("modal-title");
 const modalDescription = document.getElementById("modal-description");
 const closeBtn = document.querySelector(".close-btn");
 
+// 다이나믹 그리드 생성 함수 제거 (이미 HTML에 정적으로 구현됨)
 function init() {
-  places.forEach((place, index) => {
-    const card = document.createElement("div");
-    card.className = "card";
-    
-    // 갤러리 HTML 생성 (메인 화면 카드에서는 대표 3장만 표시)
-    const galleryHtml = place.gallery.slice(0, 3).map(img => \`
-      <div class="gallery-img" style="background-image: url('\${img}')"></div>
-    \`).join("");
-
-    card.innerHTML = \`
-      <div class="card-image" style="background-image: url('\${place.image}')"></div>
-      <div class="card-content">
-        <h3 class="card-title">\${index + 1}. \${place.title}</h3>
-        <p class="card-summary">\${place.summary}</p>
-        <div class="card-gallery">
-          \${galleryHtml}
-        </div>
-      </div>
-    \`;
-    card.addEventListener("click", () => showModal(place));
-    placeList.appendChild(card);
-  });
+  console.log("런던 여행 가이드 페이지 로드 완료 (SEO 정적 최적화 버전)");
 }
 
 function showModal(place) {
   modalTitle.textContent = place.title;
   
   // 모달 내부에 풍부한 설명과 5장 전체 갤러리 추가
-  let richHtml = \`
+  let richHtml = `
     <div style="margin-bottom: 2rem;">
-      <p style="text-align:left; line-height: 1.8; font-size: 1.1rem; color: #2d3436;">\${place.description}</p>
+      <p style="text-align:left; line-height: 1.8; font-size: 1.1rem; color: #2d3436;">${place.description}</p>
     </div>
-    <h3 style="text-align:left; margin-bottom: 1rem; color: var(--primary-blue); font-size: 1.3rem;">포토 갤러리</h3>
+    <h3 style="text-align:left; margin-bottom: 1rem; color: #012169; font-size: 1.3rem;">포토 갤러리</h3>
     <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; margin-bottom: 1rem;">
-  \`;
+  `;
   
   place.gallery.forEach(img => {
-    richHtml += \`<div style="background-image: url('\${img}'); aspect-ratio: 1/1; background-size: cover; background-position: center; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"></div>\`;
+    richHtml += `<div style="background-image: url('${img}'); aspect-ratio: 1/1; background-size: cover; background-position: center; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"></div>`;
   });
-  richHtml += \`</div>\`;
+  richHtml += `</div>`;
   
   modalDescription.innerHTML = richHtml;
   modal.style.display = "flex";
