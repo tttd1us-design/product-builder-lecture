@@ -36,7 +36,7 @@ const places = [
     title: "영국 박물관",
     summary: "인류 역사와 문화의 보물창고",
     description: "세계 최대 규모의 박물관 중 하나로, 로제타 스톤, 파르테논 신전의 조각상 등 전 세계에서 수집된 방대한 유물을 보유하고 있습니다. 입장료가 무료인 것도 큰 장점입니다.",
-    image: "https://images.unsplash.com/photo-1518902787645-0373809623e1?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1549884501-7eec285ec525?auto=format&fit=crop&q=80&w=800",
     gallery: [
       "https://images.unsplash.com/photo-1512470876302-972fad2aa9dd?auto=format&fit=crop&q=80&w=400",
       "https://images.unsplash.com/photo-1524397057410-1e775ed476f3?auto=format&fit=crop&q=80&w=400",
@@ -69,7 +69,7 @@ const places = [
     title: "웨스트민스터 사원",
     summary: "왕실의 대관식과 장례식이 치러지는 곳",
     description: "수많은 영국 왕들이 잠들어 있는 곳이자, 왕실의 결혼식이 열리는 성스러운 장소입니다. 고딕 양식의 정수를 보여주는 건축미와 영국 역사 인물들의 기념비가 가득합니다.",
-    image: "https://images.unsplash.com/photo-1530906236207-68045610ec87?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1605809756184-b0cf3e7894a8?auto=format&fit=crop&q=80&w=800",
     gallery: [
       "https://images.unsplash.com/photo-1535491740377-0335e236315c?auto=format&fit=crop&q=80&w=400",
       "https://images.unsplash.com/photo-1550978932-613669176980?auto=format&fit=crop&q=80&w=400",
