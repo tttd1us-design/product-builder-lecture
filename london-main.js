@@ -40,7 +40,7 @@ const places = [
     gallery: [
       "https://images.unsplash.com/photo-1512470876302-972fad2aa9dd?auto=format&fit=crop&q=80&w=400",
       "https://images.unsplash.com/photo-1524397057410-1e775ed476f3?auto=format&fit=crop&q=80&w=400",
-      "https://images.unsplash.com/photo-1520263115673-610416f52ab6?auto=format&fit=crop&q=80&w=400"
+      "https://images.unsplash.com/photo-1518005020250-ece9583ca173?auto=format&fit=crop&q=80&w=400"
     ]
   },
   {
@@ -80,11 +80,11 @@ const places = [
     title: "더 샤드",
     summary: "런던에서 가장 높은 초고층 빌딩",
     description: "렌조 피아노가 설계한 유리 조각 모양의 건물입니다. 서유럽에서 가장 높은 전망대를 갖추고 있으며, 구름 위에서 런던의 현대적인 스카이라인을 감상할 수 있습니다.",
-    image: "https://images.unsplash.com/photo-1520986606214-8b456906c813?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&q=80&w=800",
     gallery: [
       "https://images.unsplash.com/photo-1522083165195-3424ed129620?auto=format&fit=crop&q=80&w=400",
       "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=400",
-      "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&q=80&w=400"
+      "https://images.unsplash.com/photo-1520986606214-8b456906c813?auto=format&fit=crop&q=80&w=400"
     ]
   },
   {
