@@ -30,18 +30,33 @@ generateBtn.addEventListener("click", () => {
 
 function generateNumbers() {
   numbersContainer.innerHTML = "";
-  const numbers = new Set();
-  while (numbers.size < 6) {
-    const randomNumber = Math.floor(Math.random() * 45) + 1;
-    numbers.add(randomNumber);
-  }
   
-  const sortedNumbers = Array.from(numbers).sort((a, b) => a - b);
-  
-  for (const number of sortedNumbers) {
-    const numberEl = document.createElement("div");
-    numberEl.classList.add("number");
-    numberEl.textContent = number;
-    numbersContainer.appendChild(numberEl);
+  for (let s = 1; s <= 3; s++) {
+    const setContainer = document.createElement("div");
+    setContainer.classList.add("set-row");
+    setContainer.style.display = "flex";
+    setContainer.style.justifyContent = "center";
+    setContainer.style.gap = "0.8rem";
+    setContainer.style.marginBottom = "1.5rem";
+    setContainer.style.width = "100%";
+    setContainer.style.flexWrap = "wrap";
+
+    const numbers = new Set();
+    while (numbers.size < 6) {
+      const randomNumber = Math.floor(Math.random() * 45) + 1;
+      numbers.add(randomNumber);
+    }
+    
+    const sortedNumbers = Array.from(numbers).sort((a, b) => a - b);
+    
+    for (const number of sortedNumbers) {
+      const numberEl = document.createElement("div");
+      numberEl.classList.add("number");
+      numberEl.textContent = number;
+      // 인라인 스타일로 애니메이션 지연을 주어 순차적으로 나타나게 함
+      numberEl.style.animationDelay = `${(s - 1) * 0.3 + sortedNumbers.indexOf(number) * 0.1}s`;
+      setContainer.appendChild(numberEl);
+    }
+    numbersContainer.appendChild(setContainer);
   }
 }
